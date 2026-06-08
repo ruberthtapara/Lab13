@@ -5,16 +5,15 @@ plugins {
 
 android {
     namespace = "com.example.lab13"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+
+    // CORRECCIÓN: Configuración oficial de la API 37 para resolver el conflicto de metadatos AAR
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.example.lab13"
         minSdk = 24
-        targetSdk = 36
+        // CORRECCIÓN: Actualizado a 37 para maximizar la compatibilidad con androidx.core 1.19.0
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
 
