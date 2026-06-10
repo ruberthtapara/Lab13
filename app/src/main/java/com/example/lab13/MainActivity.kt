@@ -15,8 +15,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                // LLAMAMOS AL NUEVO EJERCICIO DE COLOR ANIMADO
-                BarcaColorScreen(
+                // LLAMAMOS AL EJERCICIO DE TAMAÑO Y POSICIÓN ANIMADOS
+                BarcaSizeAndPositionScreen(
                     modifier = Modifier.padding(innerPadding)
                 )
             }
