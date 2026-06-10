@@ -1,5 +1,6 @@
 package com.example.lab13
 
+
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -15,8 +16,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                // LLAMAMOS AL EJERCICIO DE TAMAÑO Y POSICIÓN ANIMADOS
-                BarcaSizeAndPositionScreen(
+                BarcaContentScreen(
                     modifier = Modifier.padding(innerPadding)
                 )
             }
